@@ -28,6 +28,12 @@ namespace Padroes_Estilizacao_Web.Controllers
             return View();
         }
 
+        public IActionResult Box_Shadow_CSS()
+        {
+            return View();
+        }
+
+        
         public IActionResult Outros()
         {
             return View();

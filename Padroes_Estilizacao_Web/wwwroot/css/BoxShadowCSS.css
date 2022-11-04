@@ -1,0 +1,18 @@
+
+.titulo{
+    margin-left: 470px;
+    margin-top: 60px;
+}
+
+.box {
+    margin: auto;
+    background: limegreen;
+    width: 30rem;
+    aspect-ratio: 1 / 1;
+    inset: 0rem;
+    border: 3px solid #ffffff;
+    border-radius: 20px;
+    /*Inserindo Margens para efeito de  3D*/
+    /*box-shadow: 2rem 2rem 2rem blue;*/
+    box-shadow: 0rem 2rem 0 -1rem blue, 0rem 4rem 0 -2rem red, 0rem 6rem 0 -3rem purple, 0rem 8rem 0 -4rem black;
+}
