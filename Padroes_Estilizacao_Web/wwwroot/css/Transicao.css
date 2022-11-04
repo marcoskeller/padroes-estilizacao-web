@@ -1,0 +1,93 @@
+﻿.title {
+    color: darkcyan;
+}
+
+.titulo-pagina{
+    width:100%;
+    height:100%;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-size:26px;
+    font-weight:600;
+    color:darkcyan;
+    margin: 10px;
+}
+
+.container{
+    width:100vw;
+    height:00vh
+}
+
+.box-one {
+    color: #ffffff;
+    font-weight: 600;
+    width: 150px;
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #07beb8;
+    transition-timing-function: linear;
+    transition-duration: 2s;
+    transition-property: width;
+}
+
+.box-two {
+    color: #ffffff;
+    font-weight: 600;
+    width: 150px;
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #3DCCC7;
+    transition-timing-function: ease-in;
+    transition-duration: 2s;
+    transition-property: width;
+}
+
+.box-tree {
+    color: #ffffff;
+    font-weight: 600;
+    width: 150px;
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #9CEAEF;
+    transition-timing-function: ease-out;
+    transition-duration: 2s;
+    transition-property: width;
+}
+
+.box-four {
+    color: #ffffff;
+    font-weight: 600;
+    width: 150px;
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #B1F8F2;
+    transition-timing-function: ease-in-out;
+    transition-duration: 2s;
+    transition-property: width;
+}
+
+.container:hover .box-one{
+    width: 50%;
+}
+
+.container:hover .box-two {
+    width: 50%;
+}
+
+.container:hover .box-tree {
+    width: 50%;
+}
+
+.container:hover .box-four {
+    width: 50%;
+}

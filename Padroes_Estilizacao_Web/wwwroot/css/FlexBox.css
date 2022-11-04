@@ -1,0 +1,93 @@
+﻿
+
+.corpo-app {
+    background: #808080;
+    margin-top: 60px;
+    padding: 100px;
+    border-radius: 20px;
+}
+
+.titulo {
+    margin-top: 50px;
+    font-family: Verdana;
+    font-size: 42px;
+    color: #4800ff;
+    font-weight: 600;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid;
+    border-radius: 10px;
+    background: #ffd800;
+}
+
+.div-flex {
+    display: flex;
+    margin-top: 10px;
+}
+
+.exemplo-1 {
+    height: 40px;
+    width: 100px;
+    border: 1px solid #ffffff;
+    background: #ff6a00;
+    border-radius: 10px;
+    margin: 5px;
+    text-align: center;
+}
+
+.div-wrap {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 10px;
+}
+
+.exemplo-2 {
+    height: 40px;
+    width: 100px;
+    color: #ffffff;
+    border: 1px solid #ffffff;
+    background: #4800ff;
+    border-radius: 10px;
+    margin: 5px;
+    text-align: center;
+}
+
+
+.justify-content {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+
+.exemplo-3 {
+    height: 40px;
+    width: 300px;
+    color: #000000;
+    border: 1px solid #ffffff;
+    background: #b6ff00;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.align-items {
+    display: flex;
+    background: #ff00dc;
+    width: 100%;
+    height: 100px;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10px;
+    border-radius: 10px;
+}
+
+.exemplo-4 {
+    height: 40px;
+    width: 200px;
+    color: #000000;
+    border: 1px solid #ffffff;
+    background: #b200ff;
+    border-radius: 10px;
+    margin: 5px;
+    text-align: center;
+}
