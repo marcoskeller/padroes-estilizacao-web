@@ -1,0 +1,46 @@
+﻿@{
+    ViewData["Title"] = "";
+}
+@*<h1>@ViewData["Title"]</h1>*@
+
+<div class="titulo">
+    <h1>Gráfico Bolha</h1>
+</div>
+
+<div class="conteudoBase">
+    <div class="top">
+        <div class="div-btn-grafico">
+            <input type="button" id="Adicionar" value="Adicionar 5" class="btn-grafico" />
+            <input type="button" id="Remover" value="Remover 5"  class="btn-grafico" />
+        </div>
+    </div>
+    <div class="conteudo">
+        <div class="card-grafico-bola">
+            <div class="grafico-bola">
+                <div class="pontuacao">
+                    <p id="porcentagem">0%</p>
+                </div>
+            </div>
+            <h2>Valor em Porcentagem <span id="porcentagemSpan"> 0%</span></h2>
+        </div>
+    </div>
+    <div class="rodape">
+    </div>
+</div>
+
+
+
+
+
+
+<script src="~/lib/jquery/dist/jquery.min.js"></script>
+<script src="~/lib/jquery/dist/jquery.js"></script>
+
+<script src="~/js/Graficobolhasunico.js"></script>
+
+<link href="~/css/GraficobolhasUnico.css" rel="stylesheet" />
+
+
+
+
+

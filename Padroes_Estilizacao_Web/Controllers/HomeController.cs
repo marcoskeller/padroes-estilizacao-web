@@ -33,14 +33,17 @@ namespace Padroes_Estilizacao_Web.Controllers
             return View();
         }
 
-
         public IActionResult BarraProgresso()
         {
             return View();
         }
 
-
         public IActionResult BotaoUploadBarraProgresso()
+        {
+            return View();
+        }
+
+        public IActionResult GraficoBolhasUnico()
         {
             return View();
         }
