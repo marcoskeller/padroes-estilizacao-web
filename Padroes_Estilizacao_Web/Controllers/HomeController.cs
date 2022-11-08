@@ -47,6 +47,11 @@ namespace Padroes_Estilizacao_Web.Controllers
         {
             return View();
         }
+
+        public IActionResult Efeito3D()
+        {
+            return View();
+        }
         
         public IActionResult Outros()
         {

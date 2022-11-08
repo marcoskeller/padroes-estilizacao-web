@@ -1,0 +1,56 @@
+﻿
+.titulo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 15%;
+    /*Configuracao do Texto*/
+    font-family: cursive;
+    font-size: 18px;
+    color: #695feb;
+    font-weight: 600;
+}
+
+.conteudo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.foto {
+    position: relative;
+    width: 360px;
+    height: 360px;
+    transform: rotate(-30deg) skew(25deg) scale(0.5);
+    background: rgba(29, 27, 27, 0.89 );
+    transition: 0.5s;
+}
+
+.foto:hover img:nth-child(4){
+    transform: translate(160px, -160px); /*rotate(400deg);*/
+}
+
+
+.foto:hover img:nth-child(3) {
+    transform: translate(120px, -120px); /*rotate(200deg);*/
+    opacity: 0.8;
+}
+
+
+.foto:hover img:nth-child(2) {
+    transform: translate(80px, -80px); /*rotate(100deg);*/
+    opacity: 0.6;
+}
+
+
+.foto:hover img:nth-child(1) {
+    transform: translate(40px, -40px); /*rotate(50deg);*/
+    opacity: 0.4;
+}
+
+.foto img {
+    width: 100%;
+    position: absolute;
+    transition: 0.5s;
+    border-radius: 100%;
+}
