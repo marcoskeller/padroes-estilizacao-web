@@ -52,7 +52,13 @@ namespace Padroes_Estilizacao_Web.Controllers
         {
             return View();
         }
+
+        public IActionResult EfeitoRelogio()
+        {
+            return View();
+        }
         
+
         public IActionResult Outros()
         {
             return View();
