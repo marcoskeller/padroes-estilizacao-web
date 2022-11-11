@@ -100,6 +100,12 @@ namespace Padroes_Estilizacao_Web.Controllers
         }
 
 
+        public IActionResult DivsEditaveis()
+        {
+            return View();
+        }
+
+        
         public IActionResult Outros()
         {
             return View();
