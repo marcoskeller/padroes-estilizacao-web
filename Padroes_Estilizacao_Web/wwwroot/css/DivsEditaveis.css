@@ -1,6 +1,6 @@
 ﻿
 
-.divConteudo
+/*.divConteudo
 {
     width: 100%;
     height: 500px;
@@ -8,15 +8,19 @@
     box-shadow: 9px 7px 5px rgba(50, 50, 50, 0.77);
     border-radius: 7px;
     background-color: #c5cbab;
+    position:relative;
 }
 
 .divCustomizavel {
+    position:absolute;
     padding: 1rem;
     box-shadow: 9px 7px 5px rgba(50,50,50,0.77);
     border-radius: 7px;
     background-color: white;
-    height: 100px;
-    width: 100px;
+    height: auto;
+    width: auto;
+    margin-top: 1%;
+    margin-left: 1%;
 }
 
 .resizeButton {
@@ -28,5 +32,39 @@
     height: 20px;
     background: url('../img/resize.jpg') no-repeat center center;
     background-size: contain;
-    cursor: resize;
+    cursor: pointer;
+}*/
+
+.divConteudo {
+    width: 100%;
+    height: 500px;
+    padding: 1rem;
+    box-shadow: 9px 7px 5px rgba(50,50,50,0.77);
+    border-radius: 7px;
+    background-color: #c5cbab;
+    position: relative;
+}
+
+.divcustomizavel {
+    position: absolute;
+    padding: 1rem;
+    box-shadow: 9px 7px 5px rgba(50,50,50,0.77);
+    border-radius: 7px;
+    background-color: white;
+    height: auto;
+    width: auto;
+    margin-top: 1%;
+    margin-left: 1%;
+}
+
+.resizeButton {
+    display: block;
+    position: absolute;
+    bottom: 3px;
+    right: 6px;
+    width: 20px;
+    height: 20px;
+    background: url('../img/resize.jpg') no-repeat center center;
+    background-size: contain;
+    cursor: pointer;
 }
