@@ -105,7 +105,7 @@ namespace Padroes_Estilizacao_Web.Controllers
         }
 
         
-        public IActionResult Outros()
+        public IActionResult BarraProgressoComNProgresso()
         {
             return View();
         }

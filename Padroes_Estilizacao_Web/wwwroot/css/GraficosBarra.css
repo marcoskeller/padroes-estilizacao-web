@@ -44,12 +44,12 @@
 
 .barra-progresso-1 {
     position: absolute;
-    bottom: 197px;
+    bottom: 163px;
     margin-left: 1.9px;
     border-radius: 10px;
     background: aqua;
     width: 18px;
-    height: 5%;
+    height: 10%;
 }
 
 .porcentagem-barra-progresso-1 {

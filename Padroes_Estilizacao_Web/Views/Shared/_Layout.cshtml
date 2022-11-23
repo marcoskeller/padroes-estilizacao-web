@@ -56,7 +56,7 @@
                             <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="DivsEditaveis">Divs Editaveis</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Outros">Outros-2</a>
+                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="BarraProgressoComNProgresso">NProgresso</a>
                         </li>                       
                     </ul>
                 </div>
@@ -77,6 +77,30 @@
     <script src="~/lib/jquery/dist/jquery.min.js"></script>
     <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
     <script src="~/js/site.js" asp-append-version="true"></script>
+    <link href="~/css/nprogress.css" rel="stylesheet" />
+    <script src="~/js/nprogress.js"></script>
     @await RenderSectionAsync("Scripts", required: false)
+
+    <script>
+        $('body').show();
+        $('.version').text(NProgress.version);
+        NProgress.start();
+
+        var interval = setInterval(function () { NProgress.inc(); }, 1000);
+
+        $(window).on('load', function () {
+            clearInterval(interval);
+            NProgress.done();
+        });
+
+        $(window).on('unload', function () {
+            NProgress.start();
+        });
+
+        window.addEventListener('beforeunload', function (event) {
+            NProgress.start();
+        });
+
+    </script>
 </body>
 </html>
