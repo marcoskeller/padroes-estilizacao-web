@@ -21,6 +21,36 @@ var div = Array.prototype.filter.call(elementos, function (div) {
 
 });
 
+var listaConfiguracoes = []
+
+
+function salvarEdicao() {
+
+    var elementos = document.getElementsByClassName('divcustomizavel');
+    for (var i = 0; i < elementos.length; i++) {
+
+        var elementoHemlCompleto = $("#" + elementos[i].id)[0].outerHTML;
+
+        var objeto = {
+            elementoHemlCompleto: elementoHemlCompleto
+        };
+
+        listaConfiguracoes.push(objeto);
+
+    }
+}
+
+
+function recarregar() {
+
+    $(".divConteudo").html("");
+
+    listaConfiguracoes.forEach(function (item) {
+        $(".divConteudo").append(item.elementoHemlCompleto);
+    });
+
+}
+
 
 $(function () {
 
@@ -44,5 +74,14 @@ $(function () {
     $("#div3").css("top", '228px');
     $("#div4").css("top", '336px');
     $("#div5").css("top", '536px');
+
+
+    $("#btnSalvar").click(function () {
+        salvarEdicao();
+    });
+
+    $("#btnRecarregar").click(function () {
+        recarregar();
+    });
 
 });

@@ -59,7 +59,6 @@ namespace Padroes_Estilizacao_Web.Controllers
             return View();
         }
 
-
         public IActionResult GraficosBarra()
         {
             return View();
@@ -110,6 +109,38 @@ namespace Padroes_Estilizacao_Web.Controllers
         {
             return View();
         }
+
+
+        /*Controller para buscar as imagens*/
+        [HttpGet("/Home/ListaImagens")]
+        public async Task<JsonResult> ListaImagens()
+        {
+            var listaImagens = new List<FotosPaginaInicial>();
+
+            listaImagens.Add(new FotosPaginaInicial
+            {
+                descricao = "Essa é a Primeira Imagem",
+                url = "/img/fotos-pagina-inicial/IMG_8028.JPG"
+            });
+            listaImagens.Add(new FotosPaginaInicial
+            {
+                descricao = "Essa é a Segunda Imagem",
+                url = "/img/fotos-pagina-inicial/IMG_8029.JPG"
+            });
+            listaImagens.Add(new FotosPaginaInicial
+            {
+                descricao = "Essa é a Terceira Imagem",
+                url = "/img/fotos-pagina-inicial/IMG_8030.JPG"
+            });
+            listaImagens.Add(new FotosPaginaInicial
+            {
+                descricao = "Essa é a Quarta Imagem",
+                url = "/img/fotos-pagina-inicial/IMG_8031.JPG"
+            });
+            return Json(listaImagens);
+        }
+        
+
 
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
         public IActionResult Error()
